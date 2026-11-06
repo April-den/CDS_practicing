@@ -1,0 +1,22 @@
+[project]
+name = "CDS_practicing"
+version = "0.0.1"
+authors = [{ name = "aiyang.yu@scania.com" }]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pytest",
+    "ruff",
+    "databricks-dlt",
+    "ipykernel",
+    "matplotlib",
+    "seaborn"
+]
+
+[tool.ruff]
+line-length = 120
+
+[dependency-groups]
+dev = [
+    "databricks-connect~=17.3.0",
+    "pip",
+]
